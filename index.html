@@ -118,7 +118,7 @@ footer{max-width:1180px;margin:0 auto;padding:0 16px 40px;color:var(--muted);fon
       } else {
         var lang=LANG[ext(path)]||'plaintext';
         content.innerHTML='<div class="filebar"><span>Source file: <code>'+esc(path)+'</code></span><a target="_blank" href="https://github.com/arushashi/'+site.repo+'/blob/main/'+encodeURI(path)+'">View on GitHub</a></div><pre><code class="language-'+lang+'"></code></pre>';
-        content.querySelector('code').textContent=text;
+        content.querySelector('pre code').textContent=text;
       }
       content.querySelectorAll('pre code').forEach(function(el){ try{ hljs.highlightElement(el); }catch(e){} });
       window.scrollTo({top:0});
