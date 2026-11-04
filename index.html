@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Project</title>
+<link rel="stylesheet" media="(prefers-color-scheme: light)" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+<link rel="stylesheet" media="(prefers-color-scheme: dark)" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+<style>
+:root{--bg:#f6f8fb;--card:#fff;--text:#1a2433;--muted:#5a6678;--accent:#0b63c5;--accent2:#12a594;--border:#e2e7ef;--code:#f1f4f9;--hero1:#0b63c5;--hero2:#0a3d7a}
+@media (prefers-color-scheme:dark){:root{--bg:#0e131a;--card:#161d27;--text:#e7ecf3;--muted:#9aa7b8;--accent:#5aa9ff;--accent2:#35d0bb;--border:#263040;--code:#0d1117;--hero1:#103d73;--hero2:#0b1f3a}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--accent)}
+.hero{background:linear-gradient(135deg,var(--hero1),var(--hero2));color:#fff;padding:34px 16px 30px}
+.hero .in{max-width:1180px;margin:0 auto}
+.crumb a{color:#fff;opacity:.85;text-decoration:none;font-size:.92rem}
+.crumb a:hover{opacity:1;text-decoration:underline}
+.hero h1{margin:8px 0 6px;font-size:clamp(1.6rem,4.5vw,2.3rem);line-height:1.2}
+.hero p{margin:0 0 16px;max-width:760px;opacity:.95}
+.btn{display:inline-block;padding:8px 15px;border-radius:8px;text-decoration:none;font-weight:600;font-size:.93rem;margin:0 8px 6px 0;border:1px solid rgba(255,255,255,.6);color:#fff}
+.btn.primary{background:#fff;color:#0a3d7a;border-color:#fff}
+.layout{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:260px minmax(0,1fr);gap:28px;padding:24px 16px 56px}
+nav.side{position:sticky;top:12px;align-self:start;max-height:calc(100vh - 24px);overflow:auto;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px 8px}
+nav.side summary{display:none}
+nav.side h4{margin:12px 10px 4px;font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+nav.side a{display:block;padding:5px 10px;border-radius:7px;text-decoration:none;color:var(--text);font-size:.92rem;word-break:break-word}
+nav.side a:hover{background:var(--code)}
+nav.side a.active{background:var(--accent);color:var(--bg);font-weight:600}
+main{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:8px 28px 32px;min-width:0}
+main h1{font-size:1.9rem;margin:24px 0 12px}
+main h2{font-size:1.4rem;margin:32px 0 10px;padding-bottom:6px;border-bottom:1px solid var(--border)}
+main h3{font-size:1.15rem;margin:24px 0 8px}
+main table{border-collapse:collapse;width:100%;display:block;overflow-x:auto;margin:14px 0}
+main th,main td{border:1px solid var(--border);padding:8px 12px;text-align:left;vertical-align:top}
+main th{background:var(--code)}
+main code{background:var(--code);padding:2px 6px;border-radius:5px;font-size:.88em}
+main pre{background:var(--code);border:1px solid var(--border);border-radius:10px;padding:14px;overflow-x:auto;line-height:1.5}
+main pre code{background:none;padding:0;font-size:.86rem}
+main pre code.hljs{background:none;padding:0}
+main blockquote{margin:14px 0;padding:4px 16px;border-left:4px solid var(--accent2);color:var(--muted);background:var(--code);border-radius:0 8px 8px 0}
+main hr{border:0;border-top:1px solid var(--border)}
+.filebar{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin:18px 0 6px;color:var(--muted);font-size:.9rem}
+.filebar code{font-size:.9rem}
+footer{max-width:1180px;margin:0 auto;padding:0 16px 40px;color:var(--muted);font-size:.88rem;text-align:center}
+@media (max-width:820px){
+  .layout{grid-template-columns:1fr;gap:16px}
+  nav.side{position:static;max-height:none}
+  nav.side summary{display:block;cursor:pointer;font-weight:700;padding:6px 10px}
+  main{padding:4px 16px 24px}
+}
+</style>
+</head>
+<body>
+<header class="hero"><div class="in">
+  <div class="crumb"><a href="https://arushashi.github.io/">&larr; Shashidhar Panchanana &middot; Portfolio</a></div>
+  <h1 id="ptitle">Project</h1>
+  <p id="ptag"></p>
+  <a class="btn primary" id="repo" href="#">View on GitHub</a>
+  <a class="btn" href="https://arushashi.github.io/#projects">All projects</a>
+</div></header>
+
+<div class="layout">
+  <nav class="side"><details id="navbox" open><summary>Contents</summary><div id="nav"></div></details></nav>
+  <main id="content"><p>Loading...</p></main>
+</div>
+<footer>&copy; 2026 Shashidhar Panchanana &middot; Generic example material, no employer or customer data.</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/powershell.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/dockerfile.min.js"></script>
+<script>
+(function(){
+  var LANG={ps1:'powershell',py:'python',yaml:'yaml',yml:'yaml',sql:'sql',json:'json',bicep:'plaintext',kql:'plaintext',txt:'plaintext',dockerfile:'dockerfile'};
+  var content=document.getElementById('content'), nav=document.getElementById('nav'), site=null;
+
+  function esc(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+  function ext(p){var f=p.split('/').pop().toLowerCase(); return f==='dockerfile'?'dockerfile':(f.indexOf('.')>-1?f.split('.').pop():'txt');}
+  function dirOf(p){var i=p.lastIndexOf('/'); return i<0?'':p.slice(0,i+1);}
+  function resolve(base,rel){
+    var parts=(base+rel).split('/'), out=[];
+    parts.forEach(function(s){ if(s==='..') out.pop(); else if(s!=='.'&&s!=='') out.push(s); });
+    return out.join('/');
+  }
+  function known(p){ return site.pages.some(function(x){return x.path===p;}); }
+
+  function buildNav(cur){
+    var html='';
+    site.groups.forEach(function(g){
+      html+='<h4>'+esc(g.name)+'</h4>';
+      g.items.forEach(function(it){
+        html+='<a href="#/'+encodeURI(it.path)+'"'+(it.path===cur?' class="active"':'')+'>'+esc(it.title)+'</a>';
+      });
+    });
+    nav.innerHTML=html;
+  }
+
+  function fixLinks(cur){
+    content.querySelectorAll('a[href]').forEach(function(a){
+      var h=a.getAttribute('href');
+      if(/^(https?:|mailto:|#)/.test(h)) { if(/^https?:/.test(h)) a.target='_blank'; return; }
+      var clean=h.split('#')[0], target=resolve(dirOf(cur),clean);
+      if(known(target)) a.setAttribute('href','#/'+encodeURI(target));
+      else { a.setAttribute('href','https://github.com/arushashi/'+site.repo+'/tree/main/'+target); a.target='_blank'; }
+    });
+  }
+
+  function render(path){
+    buildNav(path);
+    var page=site.pages.filter(function(p){return p.path===path;})[0];
+    document.title=(page?page.title+' | ':'')+site.title;
+    fetch(path).then(function(r){ if(!r.ok) throw new Error(r.status); return r.text(); }).then(function(text){
+      if(/\.md$/i.test(path)){
+        content.innerHTML=marked.parse(text);
+        fixLinks(path);
+      } else {
+        var lang=LANG[ext(path)]||'plaintext';
+        content.innerHTML='<div class="filebar"><span>Source file: <code>'+esc(path)+'</code></span><a target="_blank" href="https://github.com/arushashi/'+site.repo+'/blob/main/'+encodeURI(path)+'">View on GitHub</a></div><pre><code class="language-'+lang+'"></code></pre>';
+        content.querySelector('code').textContent=text;
+      }
+      content.querySelectorAll('pre code').forEach(function(el){ try{ hljs.highlightElement(el); }catch(e){} });
+      window.scrollTo({top:0});
+      if(window.matchMedia('(max-width:820px)').matches) document.getElementById('navbox').open=false;
+    }).catch(function(){ content.innerHTML='<h1>Page not found</h1><p>Choose a page from the contents.</p>'; });
+  }
+
+  function route(){
+    var h=decodeURI(location.hash.replace(/^#\/?/,''));
+    render(h && known(h) ? h : site.pages[0].path);
+  }
+
+  fetch('site.json').then(function(r){return r.json();}).then(function(s){
+    site=s;
+    document.getElementById('ptitle').textContent=s.title;
+    document.getElementById('ptag').textContent=s.tagline;
+    document.getElementById('repo').href='https://github.com/arushashi/'+s.repo;
+    if(window.matchMedia('(max-width:820px)').matches) document.getElementById('navbox').open=false;
+    window.addEventListener('hashchange',route);
+    route();
+  });
+})();
+</script>
+</body>
+</html>

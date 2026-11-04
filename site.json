@@ -1,0 +1,90 @@
+{
+    "repo":  "monitoring-and-autoheal",
+    "title":  "Monitoring and Auto-Heal",
+    "tagline":  "Safe, alert-driven auto-healing, certificate expiry checks and health probes in PowerShell and Python.",
+    "groups":  [
+                   {
+                       "name":  "Overview",
+                       "items":  [
+                                     {
+                                         "path":  "README.md",
+                                         "title":  "Overview"
+                                     }
+                                 ]
+                   },
+                   {
+                       "name":  "Docs",
+                       "items":  [
+                                     {
+                                         "path":  "docs/autoheal-design.md",
+                                         "title":  "Designing auto-healing that doesn\u0027t make things worse"
+                                     }
+                                 ]
+                   },
+                   {
+                       "name":  "Source: powershell",
+                       "items":  [
+                                     {
+                                         "path":  "powershell/Invoke-ServiceAutoHeal.ps1",
+                                         "title":  "powershell/Invoke-ServiceAutoHeal.ps1"
+                                     },
+                                     {
+                                         "path":  "powershell/Test-CertExpiry.ps1",
+                                         "title":  "powershell/Test-CertExpiry.ps1"
+                                     }
+                                 ]
+                   },
+                   {
+                       "name":  "Source: python",
+                       "items":  [
+                                     {
+                                         "path":  "python/health_check.py",
+                                         "title":  "python/health_check.py"
+                                     },
+                                     {
+                                         "path":  "python/webhook_autoheal.py",
+                                         "title":  "python/webhook_autoheal.py"
+                                     }
+                                 ]
+                   },
+                   {
+                       "name":  "Source: tests",
+                       "items":  [
+                                     {
+                                         "path":  "tests/test_webhook_autoheal.py",
+                                         "title":  "tests/test_webhook_autoheal.py"
+                                     }
+                                 ]
+                   }
+               ],
+    "pages":  [
+                  {
+                      "path":  "README.md",
+                      "title":  "Overview"
+                  },
+                  {
+                      "path":  "docs/autoheal-design.md",
+                      "title":  "Designing auto-healing that doesn\u0027t make things worse"
+                  },
+                  {
+                      "path":  "powershell/Invoke-ServiceAutoHeal.ps1",
+                      "title":  "powershell/Invoke-ServiceAutoHeal.ps1"
+                  },
+                  {
+                      "path":  "powershell/Test-CertExpiry.ps1",
+                      "title":  "powershell/Test-CertExpiry.ps1"
+                  },
+                  {
+                      "path":  "python/health_check.py",
+                      "title":  "python/health_check.py"
+                  },
+                  {
+                      "path":  "python/webhook_autoheal.py",
+                      "title":  "python/webhook_autoheal.py"
+                  },
+                  {
+                      "path":  "tests/test_webhook_autoheal.py",
+                      "title":  "tests/test_webhook_autoheal.py"
+                  }
+              ]
+}
